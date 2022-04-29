@@ -1,0 +1,399 @@
+                        body {
+                            font-family: 'Rubik', sans-serif;
+                            margin: 0px;
+                            padding: 0px;
+                            overflow-x: hidden;
+                        }
+                        
+                        .section1 {
+                            background-color: white;
+                            position: fixed;
+                            display: flex;
+                            padding: 0px;
+                            margin: 0px;
+                            height: 6rem;
+                            top: 0;
+                            width: 100%;
+                            z-index: 999;
+                            transition: .5s;
+                            box-shadow: 0 0 0 2px rgba(0, 0, 0, .3);
+                        }
+                        
+                        .section1 .menubar {
+                            position: absolute;
+                            display: flex;
+                            right: 3rem;
+                            margin-top: 35px;
+                        }
+                        
+                        .section1 .menubar a {
+                            color: grey;
+                            text-decoration: none;
+                            padding-right: 50px;
+                            font-size: larger;
+                            font-weight: normal;
+                        }
+                        
+                        @media (max-width:900px) {
+                            .section1 .menubar {
+                                padding-top: 40px;
+                            }
+                            .section1 .menubar a {
+                                padding-right: 5px;
+                                font-size: smaller;
+                            }
+                        }
+                        
+                        .section1 .menubar .home {
+                            color: black;
+                        }
+                        
+                        .section1 .menubar a:hover {
+                            animation-timing-function: inherit;
+                            color: black;
+                        }
+                        
+                        .section1 h1 span {
+                            color: black;
+                        }
+                        
+                        .section1 h1 {
+                            position: fixed;
+                            margin-top: 1.2rem;
+                            display: flex;
+                            color: red;
+                            font-size: 50px;
+                            margin-left: 8rem;
+                            padding-right: 20px;
+                            border-right: 1.9px solid #D1D1D1;
+                        }
+                        
+                        @media (max-width:1000px) {
+                            .section1 h1 {
+                                margin-left: 3rem;
+                                margin-top: 35px;
+                                font-size: 25px;
+                            }
+                        }
+                        
+                        .section1 img {
+                            position: absolute;
+                            display: flex;
+                            margin-top: 1.4rem;
+                            margin-left: 14rem;
+                            padding-left: 15px;
+                        }
+                        
+                        @media (max-width:1000px) {
+                            .section1 img {
+                                margin-left: 7rem;
+                                height: 25px;
+                                margin-top: 37px;
+                                width: auto;
+                            }
+                        }
+                        
+                        #section2 {
+                            height: 35.3rem;
+                            width: 100%;
+                            display: flex;
+                        }
+                        
+                        @media (max-width:900px) {
+                            .section2 {
+                                margin-top: 6rem;
+                            }
+                        }
+                        
+                        #section2 h1 {
+                            font-family: 'Poppins', sans-serif;
+                            position: absolute;
+                            margin-left: 15%;
+                            margin-top: 18.5rem;
+                            font-size: 42px;
+                            font-weight: 600;
+                            color: rgb(16, 49, 107);
+                            border-bottom: 1px solid #DFDFDE;
+                            padding-bottom: 10px;
+                        }
+                        
+                        @media (max-width:900px) {
+                            #section2 {
+                                height: 35.5rem;
+                            }
+                            #section2 .box1 h1 {
+                                margin-top: 11rem;
+                                font-size: 32px;
+                            }
+                        }
+                        
+                        #section2 .box1 h2 {
+                            position: absolute;
+                            left: 15%;
+                            margin-top: 24rem;
+                            font: size 36px;
+                            font-weight: 600;
+                            color: #343a40;
+                        }
+                        
+                        #section2 .box1 h2::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            border-left: 2px solid grey;
+                            animation: typing 2.5s steps(12) infinite;
+                            background: white;
+                        }
+                        
+                        @keyframes typing {
+                            60%,
+                            40% {
+                                left: calc(100%);
+                                margin: 0 0 0 2px;
+                            }
+                        }
+                        
+                        @media (max-width:900px) {
+                            #section2 .box1 h2 {
+                                margin-top: 15.5rem;
+                                font-size: 20px;
+                            }
+                        }
+                        
+                        #section2 .box1 .btns {
+                            position: absolute;
+                            left: 15%;
+                            margin-top: 28.5rem;
+                        }
+                        
+                        @media (max-width:900px) {
+                            #section2 .box1 .btns {
+                                position: absolute;
+                                left: 15%;
+                                margin-top: 18.5rem;
+                            }
+                        }
+                        
+                        #section2 .box1 .resume {
+                            background-color: white;
+                            border: 2px solid rgb(16, 49, 107);
+                            padding: 10px 20px 10px 20px;
+                            color: rgb(16, 49, 107);
+                            text-decoration: none;
+                        }
+                        
+                        #section2 .box1 .resume:hover {
+                            color: black;
+                        }
+                        
+                        @media (max-width:900px) {
+                            #section2 .box1 .resume {
+                                padding: 3px 7px 3px 7px;
+                            }
+                        }
+                        
+                        #section2 .box1 .contactme {
+                            background-color: rgb(16, 49, 107);
+                            border: 2px solid rgb(16, 49, 107);
+                            padding: 10px;
+                            color: white;
+                            text-decoration: none;
+                        }
+                        
+                        #section2 .box1 .contactme:hover {
+                            background-color: white;
+                            color: black;
+                            transition: 0.8s ease;
+                        }
+                        
+                        @media (max-width:900px) {
+                            #section2 .box1 .contactme {
+                                padding: 3px;
+                            }
+                        }
+                        
+                        #section2 .box2 img {
+                            position: absolute;
+                            right: 20%;
+                            margin-top: 8rem;
+                            height: 27.5rem;
+                            width: auto;
+                        }
+                        
+                        @media (max-width:800px) {
+                            #section2 .box2 img {
+                                margin-top: 20.5rem;
+                                left: 30%;
+                                height: 15rem;
+                                width: auto;
+                            }
+                        }
+                        
+                        #section3 {
+                            position: relative;
+                            width: 100%;
+                            padding: 0px;
+                            margin: 0px;
+                            overflow-y: hidden;
+                            background-color: rgb(16, 49, 107);
+                            color: white;
+                        }
+                        
+                        @media (max-width: 900px) {
+                            #section3 {
+                                width: 100%;
+                            }
+                        }
+                        
+                        #section3 .about h1 {
+                            padding-top: 2rem;
+                            text-align: center;
+                        }
+                        
+                        @media (max-width: 600px) {
+                            #section3 .about h1 {
+                                font-size: large;
+                                padding-top: 2rem;
+                            }
+                        }
+                        
+                        #section3 .about p {
+                            line-height: 2;
+                            text-align: center;
+                            padding-bottom: 50px;
+                            padding-right: 40px;
+                            padding-left: 40px;
+                        }
+                        
+                        @media (max-width: 950px) {
+                            #section3 .about p {
+                                font-size: small;
+                                text-align: left;
+                            }
+                        }
+                        
+                        #section4 {
+                            position: relative;
+                            width: 100%;
+                            padding: 0px;
+                            margin: 0px;
+                            overflow: hidden;
+                            text-align: center;
+                        }
+                        
+                        @media (max-width: 800px) {
+                            #section4 {
+                                position: relative;
+                                text-align: center;
+                            }
+                        }
+                        
+                        #section4 .websites h1 {
+                            padding: 15px;
+                            position: relative;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        
+                        @media (max-width: 780px) {
+                            #section4 .websites h1 {
+                                font-size: large;
+                                text-align: center;
+                            }
+                        }
+                        
+                        #section4 .websites .websiteImages a {
+                            color: ;
+                            text-decoration: none;
+                            border: 1px solid cadetblue;
+                            padding: 5px 10px 5px 10px;
+                        }
+                        
+                        @media (max-width: 780px) {
+                            #section4 .websites .websiteImages img {
+                                height: 150px;
+                                width: 250px;
+                            }
+                        }
+                        
+                        #section4 .websites .websiteImages a:hover {
+                            color: white;
+                            background-color: rgb(16, 49, 107);
+                            transition: 1s ease;
+                        }
+                        
+                        #section5 .box1 {
+                            height: 18rem;
+                            width: 100%;
+                            position: relative;
+                            background-color: #DFDFDE;
+                        }
+                        
+                        @media (max-width: 500px) {
+                            #section5 .box1 {
+                                text-align: center;
+                                height: 15rem;
+                                width: 100%;
+                            }
+                        }
+                        
+                        #section5 h1 {
+                            position: absolute;
+                            margin-top: 5rem;
+                            color: #343a40;
+                            font-size: 42px;
+                            font-family: 'Poppins', sans-serif;
+                            border-bottom: 1px solid gray;
+                            padding-bottom: 10px;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                        
+                        @media (max-width: 600px) {
+                            #section5 h1 {
+                                font-size: 22px;
+                                margin-top: 5rem;
+                            }
+                        }
+                        
+                        #section5 table {
+                            position: absolute;
+                            margin-top: 8rem;
+                            color: rgb(16, 49, 107);
+                            font-family: 'Poppins', sans-serif;
+                            left: 50%;
+                            transform: translate(-50%);
+                        }
+                        
+                        @media (max-width: 600px) {
+                            #section5 table {
+                                text-align: left;
+                                margin-top: 6rem;
+                                font-size: smaller;
+                            }
+                        }
+                        
+                        #section6 .section6 {
+                            height: 6rem;
+                            width: 100%;
+                            background-color: rgb(16, 49, 107);
+                        }
+                        
+                        @media (max-width: 600px) {
+                            #section6 .section6 {
+                                width: 100%;
+                            }
+                        }
+                        
+                        #section6 .section6 .icons {
+                            padding-top: 35px;
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%);
+                        }
+                        
+                        @media (max-width: 600px) {
+                            #section6 .section6 .icons {}
+                        }
